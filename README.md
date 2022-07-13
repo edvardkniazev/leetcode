@@ -1,10 +1,4 @@
 My solutions to LeetCode problems
 
-- These solutions have been made before:
-	7.py
-	9.py
-	13.py
-	21.py
-	27.py
-	35.py
-	167.py
+- These solutions have been made before:<br>
+#7, #9, #13, #14, #21, #27, #35, #167, #724, #1480
