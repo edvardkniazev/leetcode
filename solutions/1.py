@@ -36,7 +36,7 @@ Follow-up: Can you come up with an algorithm that is less than O(n2) time comple
 nums = [2, 7, 11, 15]
 target = 9
 
-def solution1():
+def solution1():    # time complexity is O(n**2)
     for i, n in enumerate(nums):
         for j, m in enumerate(nums[i+1:], start=i+1):
             if n + m == target:
@@ -44,7 +44,7 @@ def solution1():
 
 
 # final solution
-def solution2():
+def solution2():    # time complexity is O(n)
     d = {}
     for i, n in enumerate(nums):
         d[target - n] = i
