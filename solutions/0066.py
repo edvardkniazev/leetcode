@@ -42,7 +42,7 @@ digits does not contain any leading 0's.
 """
 
 
-def solutions1(digits):
+def solution1(digits):
     delta = 1
     lenght = len(digits) - 1
     for i in range(lenght, -1, -1):
@@ -55,7 +55,7 @@ def solutions1(digits):
     return digits
 
 
-def solutions2(digits):
+def solution2(digits):
     delta = 1
     for i in range(len(digits) - 1, -1, -1):
         d = digits[i] + delta
@@ -71,7 +71,24 @@ def solutions2(digits):
     return digits
 
 
-digits = [9]
+def solution3(digits):
+    delta = 1
+    digits.reverse()
+    for i, d in enumerate(digits):
+        d += delta
+        if d == 10:
+            digits[i] = 0
+        else:
+            digits[i] = d
+            delta = 0
+            break
+    if delta:
+        digits.append(1)
+    digits.reverse()
+    return digits
+
+
 digits = [4,3,2,1]
 digits = [1,2,3]
-print(solutions2(digits))
+digits = [9]
+print(solution3(digits))
