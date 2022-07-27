@@ -2,6 +2,7 @@
 26. Remove Duplicates from Sorted Array
 Easy
 
+
 Given an integer array nums sorted in non-decreasing order, remove the duplicates
 in-place such that each unique element appears only once. The relative order of the
 elements should be kept the same.
@@ -61,7 +62,7 @@ nums is sorted in non-decreasing order.
 """
 
 
-def solutions1(nums):
+def solution1(nums):
     if len(nums) == 0:
         return 0
     k = 0
@@ -73,4 +74,4 @@ def solutions1(nums):
 
 
 nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
-print(solutions1(nums))
+print(solution1(nums))

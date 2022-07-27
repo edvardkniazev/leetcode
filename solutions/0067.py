@@ -2,6 +2,7 @@
 67. Add Binary
 Easy
 
+
 Given two binary strings a and b, return their sum as a binary string.
 
  
@@ -25,7 +26,7 @@ Each string does not contain leading zeros except for the zero itself.
 """
 
 
-def solutions1(a, b):
+def solution1(a, b):
     max_len = max(len(a), len(b))
     a = a.rjust(max_len, '0')
     b = b.rjust(max_len, '0')
@@ -51,4 +52,4 @@ b = '1'
 a = "1010"
 b = "1011"
 
-print(solutions1(a, b))
+print(solution1(a, b))
